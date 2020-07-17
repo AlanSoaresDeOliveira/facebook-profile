@@ -3,16 +3,14 @@ import IconEvil from 'react-native-vector-icons/EvilIcons';
 import {Platform} from 'react-native';
 
 export const Container = styled.View`
-  /* flex: 1; */
   margin-top: ${Platform.OS === 'ios' ? 33 : 0}px;
   background: #fff;
   width: 100%;
-  height: 50px;
+  height: 60px;
   border-bottom-color: #ccc;
   border-bottom-width: 1px;
-  /* border-top-width: 1px; */
   justify-content: center;
-  padding: 22px 28px;
+  padding: 22px 20px;
 `;
 
 export const HeaderContainer = styled.View`
@@ -27,7 +25,7 @@ export const SearchContainer = styled.View`
   padding: 0 16px;
   margin-left: 20px;
   background: #f5f5f5;
-  border-radius: 18px;
+  border-radius: 16px;
   flex-direction: row;
   align-items: center;
   justify-content: center;

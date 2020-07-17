@@ -12,7 +12,7 @@ const Header: React.FC = () => {
   return (
     <Container>
       <HeaderContainer>
-        <IconAwe5 name="arrow-left" size={20} />
+        <IconAwe5 name="arrow-left" size={18} />
         <SearchContainer>
           <Icon name="search" size={25} />
           <TextInput placeholder="Search" autoFocus={false} />
