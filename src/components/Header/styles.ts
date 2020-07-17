@@ -1,5 +1,43 @@
 import styled from 'styled-components/native';
+import IconEvil from 'react-native-vector-icons/EvilIcons';
+import {Platform} from 'react-native';
 
 export const Container = styled.View`
+  /* flex: 1; */
+  margin-top: ${Platform.OS === 'ios' ? 33 : 0}px;
+  background: #fff;
+  width: 100%;
+  height: 50px;
+  border-bottom-color: #ccc;
+  border-bottom-width: 1px;
+  /* border-top-width: 1px; */
+  justify-content: center;
+  padding: 22px 28px;
+`;
+
+export const HeaderContainer = styled.View`
+  flex-direction: row;
+  align-items: center;
+  margin-right: 28px;
+`;
+
+export const SearchContainer = styled.View`
+  width: 100%;
+  height: 37px;
+  padding: 0 16px;
+  margin-left: 20px;
+  background: #f5f5f5;
+  border-radius: 18px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const TextInput = styled.TextInput`
   flex: 1;
+  font-size: 18px;
+`;
+
+export const Icon = styled(IconEvil)`
+  margin-right: 4px;
 `;
