@@ -1,5 +1,6 @@
 import styled from 'styled-components/native';
 import IconEntypo from 'react-native-vector-icons/Entypo';
+import {RectButton} from 'react-native-gesture-handler';
 
 export const Container = styled.View`
   flex: 1;
@@ -11,11 +12,14 @@ export const ContainerImage = styled.View`
   flex: 1;
   justify-content: center;
   align-items: center;
-  margin: 0px 0px 100px;
+  margin: 0px 0px 20px;
   padding-top: 15px;
 `;
 
-export const ImageProfileCover = styled.ImageBackground`
+export const ImageProfileCover = styled.ImageBackground.attrs({
+  borderTopRightRadius: 8,
+  borderTopLeftRadius: 8,
+})`
   width: 100%;
   height: 227px;
   align-items: center;
@@ -62,3 +66,34 @@ export const Name = styled.Text`
   color: #000;
   margin-top: 100px;
 `;
+
+export const ContainerButton = styled.View`
+  flex-direction: row;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  /* border-radius: 1px; */
+`;
+
+export const AddStoryButton = styled(RectButton)`
+  width: 82%;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  flex-direction: row;
+  background: #4267b2;
+`;
+
+export const IconAddStory = styled(IconEntypo)``;
+
+export const ProfileSettingButton = styled(RectButton)`
+  width: 15%;
+  height: 40px;
+  background: #f7f7f7;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+`;
+
+// export const IconProfileSetting = styled.Text``;
