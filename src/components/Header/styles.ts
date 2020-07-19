@@ -10,7 +10,7 @@ export const Container = styled.View`
   border-bottom-color: #ccc;
   border-bottom-width: 1px;
   justify-content: center;
-  padding: 22px 20px;
+  padding: 22px 20px 18px 20px;
 `;
 
 export const HeaderContainer = styled.View`
@@ -25,7 +25,7 @@ export const SearchContainer = styled.View`
   padding: 0 16px;
   margin-left: 20px;
   background: #f5f5f5;
-  border-radius: 16px;
+  border-radius: 18px;
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -33,7 +33,7 @@ export const SearchContainer = styled.View`
 
 export const TextInput = styled.TextInput`
   flex: 1;
-  font-size: 16px;
+  font-size: 14px;
 `;
 
 export const Icon = styled(IconEvil)`

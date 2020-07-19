@@ -1,5 +1,5 @@
 import React from 'react';
-import {ScrollView, Text} from 'react-native';
+import {ScrollView} from 'react-native';
 import Header from '../../components/Header';
 
 import {
@@ -9,11 +9,12 @@ import {
   ImageProfilePicture,
   Name,
   PhotoCover,
-  IconPhotoCover,
+  PhotoProfile,
+  Icon,
   ContainerButton,
   AddStoryButton,
   ProfileSettingButton,
-  IconAddStory,
+  TextButtonAddStory,
 } from './styles';
 
 import alan from '../../assets/alan.jpg';
@@ -28,20 +29,23 @@ const Profile: React.FC = () => {
           <ContainerImage>
             <ImageProfileCover source={cover}>
               <ImageProfilePicture source={alan} />
-
               <PhotoCover>
-                <IconPhotoCover name="camera" size={20} />
+                <Icon name="camera" size={18} />
               </PhotoCover>
+              <PhotoProfile>
+                <Icon name="camera" size={18} />
+              </PhotoProfile>
             </ImageProfileCover>
             <Name>Alan Soares</Name>
           </ContainerImage>
 
           <ContainerButton>
             <AddStoryButton>
-              <IconAddStory name="circle-with-plus" size={20} color="white" />
+              <Icon name="circle-with-plus" size={20} color="white" />
+              <TextButtonAddStory>Add to Story</TextButtonAddStory>
             </AddStoryButton>
             <ProfileSettingButton>
-              <Text>...</Text>
+              <Icon name="dots-three-horizontal" size={15} />
             </ProfileSettingButton>
           </ContainerButton>
         </ScrollView>

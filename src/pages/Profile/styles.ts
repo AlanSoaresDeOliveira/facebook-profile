@@ -30,7 +30,7 @@ export const ImageProfilePicture = styled.Image`
   width: 180px;
   height: 180px;
   margin-top: 137px;
-  border-radius: 100px;
+  border-radius: 90px;
   position: absolute;
   border-width: 5px;
   border-color: #fff;
@@ -47,21 +47,21 @@ export const PhotoCover = styled.View`
   align-items: center;
 `;
 
-export const IconPhotoCover = styled(IconEntypo)``;
+export const Icon = styled(IconEntypo)``;
 
 export const PhotoProfile = styled.View`
-  background: red;
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
-  margin-left: 313px;
-  margin-top: 177px;
+  background: #d4d8e8;
+  width: 42px;
+  height: 42px;
+  border-radius: 21px;
+  margin-left: 35%;
+  margin-top: 65px;
   justify-content: center;
   align-items: center;
 `;
 
 export const Name = styled.Text`
-  font-size: 30px;
+  font-size: 28px;
   /* font-weight: bold; */
   color: #000;
   margin-top: 100px;
@@ -72,28 +72,33 @@ export const ContainerButton = styled.View`
   flex: 1;
   align-items: center;
   justify-content: space-between;
-  /* border-radius: 1px; */
+  padding-bottom: 15px;
+  border-bottom-color: #ccc;
+  border-bottom-width: 1px;
 `;
 
 export const AddStoryButton = styled(RectButton)`
   width: 82%;
-  height: 40px;
+  height: 37px;
   align-items: center;
   justify-content: center;
   border-radius: 8px;
   flex-direction: row;
-  background: #4267b2;
+  background: #1877f2;
 `;
 
-export const IconAddStory = styled(IconEntypo)``;
+export const TextButtonAddStory = styled.Text`
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 4px;
+`;
 
 export const ProfileSettingButton = styled(RectButton)`
   width: 15%;
-  height: 40px;
-  background: #f7f7f7;
+  height: 37px;
+  background: #d4d8e8;
   align-items: center;
   justify-content: center;
   border-radius: 8px;
 `;
-
-// export const IconProfileSetting = styled.Text``;
