@@ -33,7 +33,7 @@ export const SearchContainer = styled.View`
 
 export const TextInput = styled.TextInput`
   flex: 1;
-  font-size: 18px;
+  font-size: 16px;
 `;
 
 export const Icon = styled(IconEvil)`

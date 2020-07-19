@@ -8,6 +8,7 @@ import {
   ImageProfileCover,
   ImageProfilePicture,
   Name,
+  PhotoCover,
   IconPhotoCover,
 } from './styles';
 
@@ -16,18 +17,25 @@ import cover from '../../assets/cover.jpg';
 
 const Profile: React.FC = () => {
   return (
-    <Container>
+    <>
       <Header />
-      <ScrollView>
-        <ContainerImage>
-          <ImageProfileCover source={cover}>
-            <ImageProfilePicture source={alan} />
-            <IconPhotoCover />
-          </ImageProfileCover>
-        </ContainerImage>
-        <Name>Alan Soares de Olivera</Name>
-      </ScrollView>
-    </Container>
+      <Container>
+        <ScrollView>
+          <ContainerImage>
+            <ImageProfileCover
+              source={cover}
+              imageStyle={{borderTopLeftRadius: 8, borderTopRightRadius: 8}}>
+              <ImageProfilePicture source={alan} />
+
+              <PhotoCover>
+                <IconPhotoCover name="camera" size={20} />
+              </PhotoCover>
+            </ImageProfileCover>
+            <Name>Alan Soares</Name>
+          </ContainerImage>
+        </ScrollView>
+      </Container>
+    </>
   );
 };
 
