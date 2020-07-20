@@ -102,3 +102,30 @@ export const ProfileSettingButton = styled(RectButton)`
   justify-content: center;
   border-radius: 8px;
 `;
+
+export const ContainerInfo = styled.View`
+  padding: 10px 0px 10px 0;
+  /* width: 70%; */
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: space-between; */
+
+  /* margin-right: 5px; */
+`;
+
+export const StudyInfo = styled.View`
+  /* margin: 10px; */
+  /* padding-right: 10px; */
+  /* padding-top: 15px; */
+  flex: 1;
+  padding-left: 10px;
+  /* justify-content: space-between; */
+  /* flex-direction: row; */
+  /* align-items: center; */
+  border-width: 0.5px;
+`;
+
+export const StudyFromText = styled.Text`
+  /* margin-left: 26px; */
+  font-size: 18px;
+`;

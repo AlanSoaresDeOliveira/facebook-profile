@@ -1,5 +1,5 @@
 import React from 'react';
-import {ScrollView} from 'react-native';
+import {ScrollView, View} from 'react-native';
 import Header from '../../components/Header';
 
 import {
@@ -15,6 +15,9 @@ import {
   AddStoryButton,
   ProfileSettingButton,
   TextButtonAddStory,
+  ContainerInfo,
+  StudyInfo,
+  StudyFromText,
 } from './styles';
 
 import alan from '../../assets/alan.jpg';
@@ -48,6 +51,49 @@ const Profile: React.FC = () => {
               <Icon name="dots-three-horizontal" size={15} />
             </ProfileSettingButton>
           </ContainerButton>
+
+          <ContainerInfo>
+            <View style={{borderWidth: 0.5, borderColor: 'red'}}>
+              <Icon name="graduation-cap" size={25} />
+            </View>
+            <StudyInfo>
+              <StudyFromText>
+                Studies at Fatec de Presidente Prudente
+              </StudyFromText>
+            </StudyInfo>
+          </ContainerInfo>
+          <ContainerInfo>
+            <View style={{borderWidth: 0.5, borderColor: 'red'}}>
+              <Icon name="home" size={25} />
+            </View>
+            <StudyInfo>
+              <StudyFromText>Lives in São Paulo, Brazil</StudyFromText>
+            </StudyInfo>
+          </ContainerInfo>
+          <ContainerInfo>
+            <View style={{borderWidth: 0.5, borderColor: 'red'}}>
+              <Icon name="location-pin" size={25} />
+            </View>
+            <StudyInfo>
+              <StudyFromText>From Pirapozinho</StudyFromText>
+            </StudyInfo>
+          </ContainerInfo>
+          <ContainerInfo>
+            <View style={{borderWidth: 0.5, borderColor: 'red'}}>
+              <Icon name="clock" size={25} />
+            </View>
+            <StudyInfo>
+              <StudyFromText>Joined June 2012</StudyFromText>
+            </StudyInfo>
+          </ContainerInfo>
+          <ContainerInfo>
+            <View style={{borderWidth: 0.5, borderColor: 'red'}}>
+              <Icon name="dots-three-horizontal" size={25} />
+            </View>
+            <StudyInfo>
+              <StudyFromText>See Your About Info</StudyFromText>
+            </StudyInfo>
+          </ContainerInfo>
         </ScrollView>
       </Container>
     </>
