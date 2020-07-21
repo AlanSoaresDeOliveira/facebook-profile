@@ -21,6 +21,13 @@ import {
   EditDetailsButton,
   TextButtonEditDetails,
   SectionInfo,
+  SectionFriends,
+  ContainerFriends,
+  ContainerTitleFindFriends,
+  TitleFriendsView,
+  TitleFriends,
+  CountFriend,
+  TextFindFriends,
 } from './styles';
 
 import alan from '../../assets/alan.jpg';
@@ -110,6 +117,16 @@ const Profile: React.FC = () => {
               <TextButtonEditDetails>Edit Public Details</TextButtonEditDetails>
             </EditDetailsButton>
           </SectionInfo>
+          <SectionFriends>
+            <ContainerTitleFindFriends>
+              <TitleFriendsView>
+                <TitleFriends>Friends</TitleFriends>
+                <CountFriend>1,045 friends</CountFriend>
+              </TitleFriendsView>
+              <TextFindFriends>Find Friends</TextFindFriends>
+            </ContainerTitleFindFriends>
+            <ContainerFriends />
+          </SectionFriends>
         </ScrollView>
       </Container>
     </>

@@ -139,3 +139,39 @@ export const TextButtonEditDetails = styled.Text`
   color: #1877f2;
   font-size: 15px;
 `;
+
+export const SectionFriends = styled.View`
+  flex: 1;
+  border-width: 0.5px;
+  border-color: red;
+  margin-top: 15px;
+`;
+
+export const ContainerFriends = styled.View`
+  border-width: 0.5px;
+  border-color: blue;
+  margin-bottom: 5px;
+`;
+
+export const ContainerTitleFindFriends = styled.View`
+  border-width: 0.5px;
+  border-color: green;
+  margin-bottom: 5px;
+  flex-direction: row;
+  justify-content: space-between;
+`;
+
+export const TitleFriendsView = styled.View``;
+
+export const TitleFriends = styled.Text`
+  font-size: 18px;
+  font-weight: bold;
+`;
+
+export const CountFriend = styled.Text`
+  color: gray;
+`;
+export const TextFindFriends = styled.Text`
+  font-size: 16px;
+  color: #1877f2;
+`;
