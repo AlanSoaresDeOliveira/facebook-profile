@@ -20,6 +20,7 @@ import {
   TextInfo,
   EditDetailsButton,
   TextButtonEditDetails,
+  SectionInfo,
 } from './styles';
 
 import alan from '../../assets/alan.jpg';
@@ -30,7 +31,7 @@ const Profile: React.FC = () => {
     <>
       <Header />
       <Container>
-        <ScrollView>
+        <ScrollView showsVerticalScrollIndicator={false}>
           <ContainerImage>
             <ImageProfileCover source={cover}>
               <ImageProfilePicture source={alan} />
@@ -54,59 +55,61 @@ const Profile: React.FC = () => {
             </ProfileSettingButton>
           </ContainerButton>
 
-          <ContainerInfo>
-            <>
-              <Icon name="graduation-cap" size={21} color="gray" />
-            </>
-            <ContexInfo>
-              <TextInfo>
-                Studies at{' '}
-                <Text style={{fontWeight: 'bold'}}>
-                  Fatec de Presidente Prudente
-                </Text>
-              </TextInfo>
-            </ContexInfo>
-          </ContainerInfo>
-          <ContainerInfo>
-            <>
-              <Icon name="home" size={21} color="gray" />
-            </>
-            <ContexInfo>
-              <TextInfo>
-                Lives in{' '}
-                <Text style={{fontWeight: 'bold'}}>São Paulo, Brazil</Text>
-              </TextInfo>
-            </ContexInfo>
-          </ContainerInfo>
-          <ContainerInfo>
-            <>
-              <Icon name="location-pin" size={21} color="gray" />
-            </>
-            <ContexInfo>
-              <TextInfo>
-                From <Text style={{fontWeight: 'bold'}}>Pirapozinho</Text>
-              </TextInfo>
-            </ContexInfo>
-          </ContainerInfo>
-          <ContainerInfo>
-            <>
-              <Icon name="clock" size={21} color="gray" />
-            </>
-            <ContexInfo>
-              <TextInfo>Joined June 2012</TextInfo>
-            </ContexInfo>
-          </ContainerInfo>
-          <ContainerInfo>
-            <>
-              <Icon name="dots-three-horizontal" size={21} color="gray" />
-            </>
-            <ContexInfo>
-              <TextInfo>See Your About Info</TextInfo>
-            </ContexInfo>
-          </ContainerInfo>
-          <EditDetailsButton>
-            <TextButtonEditDetails>Edit Public Details</TextButtonEditDetails>
-          </EditDetailsButton>
+          <SectionInfo>
+            <ContainerInfo>
+              <>
+                <Icon name="graduation-cap" size={21} color="gray" />
+              </>
+              <ContexInfo>
+                <TextInfo>
+                  Studies at{' '}
+                  <Text style={{fontWeight: 'bold'}}>
+                    Fatec de Presidente Prudente
+                  </Text>
+                </TextInfo>
+              </ContexInfo>
+            </ContainerInfo>
+            <ContainerInfo>
+              <>
+                <Icon name="home" size={21} color="gray" />
+              </>
+              <ContexInfo>
+                <TextInfo>
+                  Lives in{' '}
+                  <Text style={{fontWeight: 'bold'}}>São Paulo, Brazil</Text>
+                </TextInfo>
+              </ContexInfo>
+            </ContainerInfo>
+            <ContainerInfo>
+              <>
+                <Icon name="location-pin" size={21} color="gray" />
+              </>
+              <ContexInfo>
+                <TextInfo>
+                  From <Text style={{fontWeight: 'bold'}}>Pirapozinho</Text>
+                </TextInfo>
+              </ContexInfo>
+            </ContainerInfo>
+            <ContainerInfo>
+              <>
+                <Icon name="clock" size={21} color="gray" />
+              </>
+              <ContexInfo>
+                <TextInfo>Joined June 2012</TextInfo>
+              </ContexInfo>
+            </ContainerInfo>
+            <ContainerInfo>
+              <>
+                <Icon name="dots-three-horizontal" size={21} color="gray" />
+              </>
+              <ContexInfo>
+                <TextInfo>See Your About Info</TextInfo>
+              </ContexInfo>
+            </ContainerInfo>
+            <EditDetailsButton>
+              <TextButtonEditDetails>Edit Public Details</TextButtonEditDetails>
+            </EditDetailsButton>
+          </SectionInfo>
         </ScrollView>
       </Container>
     </>

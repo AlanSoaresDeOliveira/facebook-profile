@@ -10,32 +10,32 @@ export const Container = styled.View`
   border-bottom-color: #ccc;
   border-bottom-width: 1px;
   justify-content: center;
-  padding: 22px 20px 18px 20px;
+  padding: 22px 16px 18px 16px;
+  /* border-width: 1px; */
 `;
 
 export const HeaderContainer = styled.View`
   flex-direction: row;
   align-items: center;
-  margin-right: 28px;
 `;
 
 export const SearchContainer = styled.View`
+  flex: 1;
   width: 100%;
-  height: 37px;
+  height: 40px;
   padding: 0 16px;
   margin-left: 20px;
   background: #f5f5f5;
   border-radius: 18px;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
 `;
 
 export const TextInput = styled.TextInput`
   flex: 1;
-  font-size: 14px;
+  font-size: 16.5px;
 `;
 
 export const Icon = styled(IconEvil)`
-  margin-right: 4px;
+  margin-right: 3px;
 `;

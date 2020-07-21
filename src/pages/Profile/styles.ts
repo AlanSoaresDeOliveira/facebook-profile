@@ -1,5 +1,4 @@
 import styled from 'styled-components/native';
-import {StatusBar} from 'react-native';
 import IconEntypo from 'react-native-vector-icons/Entypo';
 import {RectButton} from 'react-native-gesture-handler';
 
@@ -13,8 +12,8 @@ export const ContainerImage = styled.View`
   flex: 1;
   justify-content: center;
   align-items: center;
-  margin: 0px 0px 20px;
-  padding-top: 15px;
+  margin: 17px 0px 20px;
+  /* padding-top: 15px; */
 `;
 
 export const ImageProfileCover = styled.ImageBackground.attrs({
@@ -79,7 +78,7 @@ export const ContainerButton = styled.View`
 `;
 
 export const AddStoryButton = styled(RectButton)`
-  width: 82%;
+  width: 82.5%;
   height: 37px;
   align-items: center;
   justify-content: center;
@@ -102,6 +101,12 @@ export const ProfileSettingButton = styled(RectButton)`
   align-items: center;
   justify-content: center;
   border-radius: 8px;
+`;
+export const SectionInfo = styled.View`
+  flex: 1;
+  padding-bottom: 17px;
+  border-bottom-color: #ccc;
+  border-bottom-width: 1px;
 `;
 
 export const ContainerInfo = styled.View`
@@ -132,7 +137,5 @@ export const EditDetailsButton = styled(RectButton)`
 
 export const TextButtonEditDetails = styled.Text`
   color: #1877f2;
-  /* color: #1f57d5; */
   font-size: 15px;
-  /* font-weight: bold; */
 `;
