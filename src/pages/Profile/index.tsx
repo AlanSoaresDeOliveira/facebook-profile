@@ -1,5 +1,5 @@
 import React from 'react';
-import {ScrollView, View} from 'react-native';
+import {ScrollView, Text} from 'react-native';
 import Header from '../../components/Header';
 
 import {
@@ -16,8 +16,10 @@ import {
   ProfileSettingButton,
   TextButtonAddStory,
   ContainerInfo,
-  StudyInfo,
-  StudyFromText,
+  ContexInfo,
+  TextInfo,
+  EditDetailsButton,
+  TextButtonEditDetails,
 } from './styles';
 
 import alan from '../../assets/alan.jpg';
@@ -53,47 +55,58 @@ const Profile: React.FC = () => {
           </ContainerButton>
 
           <ContainerInfo>
-            <View style={{borderWidth: 0.5, borderColor: 'red'}}>
-              <Icon name="graduation-cap" size={25} />
-            </View>
-            <StudyInfo>
-              <StudyFromText>
-                Studies at Fatec de Presidente Prudente
-              </StudyFromText>
-            </StudyInfo>
+            <>
+              <Icon name="graduation-cap" size={21} color="gray" />
+            </>
+            <ContexInfo>
+              <TextInfo>
+                Studies at{' '}
+                <Text style={{fontWeight: 'bold'}}>
+                  Fatec de Presidente Prudente
+                </Text>
+              </TextInfo>
+            </ContexInfo>
           </ContainerInfo>
           <ContainerInfo>
-            <View style={{borderWidth: 0.5, borderColor: 'red'}}>
-              <Icon name="home" size={25} />
-            </View>
-            <StudyInfo>
-              <StudyFromText>Lives in São Paulo, Brazil</StudyFromText>
-            </StudyInfo>
+            <>
+              <Icon name="home" size={21} color="gray" />
+            </>
+            <ContexInfo>
+              <TextInfo>
+                Lives in{' '}
+                <Text style={{fontWeight: 'bold'}}>São Paulo, Brazil</Text>
+              </TextInfo>
+            </ContexInfo>
           </ContainerInfo>
           <ContainerInfo>
-            <View style={{borderWidth: 0.5, borderColor: 'red'}}>
-              <Icon name="location-pin" size={25} />
-            </View>
-            <StudyInfo>
-              <StudyFromText>From Pirapozinho</StudyFromText>
-            </StudyInfo>
+            <>
+              <Icon name="location-pin" size={21} color="gray" />
+            </>
+            <ContexInfo>
+              <TextInfo>
+                From <Text style={{fontWeight: 'bold'}}>Pirapozinho</Text>
+              </TextInfo>
+            </ContexInfo>
           </ContainerInfo>
           <ContainerInfo>
-            <View style={{borderWidth: 0.5, borderColor: 'red'}}>
-              <Icon name="clock" size={25} />
-            </View>
-            <StudyInfo>
-              <StudyFromText>Joined June 2012</StudyFromText>
-            </StudyInfo>
+            <>
+              <Icon name="clock" size={21} color="gray" />
+            </>
+            <ContexInfo>
+              <TextInfo>Joined June 2012</TextInfo>
+            </ContexInfo>
           </ContainerInfo>
           <ContainerInfo>
-            <View style={{borderWidth: 0.5, borderColor: 'red'}}>
-              <Icon name="dots-three-horizontal" size={25} />
-            </View>
-            <StudyInfo>
-              <StudyFromText>See Your About Info</StudyFromText>
-            </StudyInfo>
+            <>
+              <Icon name="dots-three-horizontal" size={21} color="gray" />
+            </>
+            <ContexInfo>
+              <TextInfo>See Your About Info</TextInfo>
+            </ContexInfo>
           </ContainerInfo>
+          <EditDetailsButton>
+            <TextButtonEditDetails>Edit Public Details</TextButtonEditDetails>
+          </EditDetailsButton>
         </ScrollView>
       </Container>
     </>

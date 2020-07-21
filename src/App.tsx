@@ -10,7 +10,9 @@ const Stack = createStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator headerMode="none">
+      <Stack.Navigator
+        headerMode="none"
+        screenOptions={{cardStyle: {backgroundColor: '#fff'}}}>
         <Stack.Screen name="profile" component={Profile} />
       </Stack.Navigator>
     </NavigationContainer>

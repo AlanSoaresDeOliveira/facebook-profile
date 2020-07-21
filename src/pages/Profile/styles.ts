@@ -1,4 +1,5 @@
 import styled from 'styled-components/native';
+import {StatusBar} from 'react-native';
 import IconEntypo from 'react-native-vector-icons/Entypo';
 import {RectButton} from 'react-native-gesture-handler';
 
@@ -96,7 +97,7 @@ export const TextButtonAddStory = styled.Text`
 
 export const ProfileSettingButton = styled(RectButton)`
   width: 15%;
-  height: 37px;
+  height: 36px;
   background: #d4d8e8;
   align-items: center;
   justify-content: center;
@@ -105,27 +106,33 @@ export const ProfileSettingButton = styled(RectButton)`
 
 export const ContainerInfo = styled.View`
   padding: 10px 0px 10px 0;
-  /* width: 70%; */
   flex-direction: row;
   align-items: center;
-  /* justify-content: space-between; */
-
-  /* margin-right: 5px; */
 `;
 
-export const StudyInfo = styled.View`
-  /* margin: 10px; */
-  /* padding-right: 10px; */
-  /* padding-top: 15px; */
+export const ContexInfo = styled.View`
   flex: 1;
   padding-left: 10px;
-  /* justify-content: space-between; */
-  /* flex-direction: row; */
-  /* align-items: center; */
-  border-width: 0.5px;
+  /* border-width: 0.5px; */
 `;
 
-export const StudyFromText = styled.Text`
-  /* margin-left: 26px; */
-  font-size: 18px;
+export const TextInfo = styled.Text`
+  font-size: 17px;
+`;
+
+export const EditDetailsButton = styled(RectButton)`
+  width: 100%;
+  height: 37px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  flex-direction: row;
+  background: #e5f3ff;
+`;
+
+export const TextButtonEditDetails = styled.Text`
+  color: #1877f2;
+  /* color: #1f57d5; */
+  font-size: 15px;
+  /* font-weight: bold; */
 `;
