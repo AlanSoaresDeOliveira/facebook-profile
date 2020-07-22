@@ -1,6 +1,15 @@
 import React from 'react';
-import {ScrollView, Text} from 'react-native';
+import {
+  ScrollView,
+  Text,
+  Image,
+  View,
+  TouchableOpacity,
+  Dimensions,
+} from 'react-native';
 import Header from '../../components/Header';
+
+const win = Dimensions.get('window');
 
 import {
   Container,
@@ -125,7 +134,72 @@ const Profile: React.FC = () => {
               </TitleFriendsView>
               <TextFindFriends>Find Friends</TextFindFriends>
             </ContainerTitleFindFriends>
-            <ContainerFriends />
+            <ContainerFriends>
+              <View
+                style={{
+                  width: win.width / 4,
+                  height: win.height / 5,
+                  alignItems: 'center',
+                  flexWrap: 'wrap',
+                  borderWidth: 0.5,
+                }}>
+                <TouchableOpacity>
+                  <Image
+                    source={alan}
+                    style={{
+                      flex: 1,
+                      width: win.width / 4,
+                      height: win.height / 4,
+                      borderRadius: 8,
+                    }}
+                  />
+                  <Text>Alan Soares de Oliveira</Text>
+                </TouchableOpacity>
+              </View>
+
+              <View
+                style={{
+                  width: win.width / 4,
+                  height: win.height / 5,
+                  alignItems: 'center',
+                  flexWrap: 'wrap',
+                  borderWidth: 0.5,
+                }}>
+                <TouchableOpacity>
+                  <Image
+                    source={alan}
+                    style={{
+                      flex: 1,
+                      width: win.width / 4,
+                      height: win.height / 4,
+                      borderRadius: 8,
+                    }}
+                  />
+                  <Text>Alan Soares de Oliveira</Text>
+                </TouchableOpacity>
+              </View>
+              <View
+                style={{
+                  width: win.width / 4,
+                  height: win.height / 5,
+                  alignItems: 'center',
+                  flexWrap: 'wrap',
+                  borderWidth: 0.5,
+                }}>
+                <TouchableOpacity>
+                  <Image
+                    source={alan}
+                    style={{
+                      flex: 1,
+                      width: win.width / 4,
+                      height: win.height / 4,
+                      borderRadius: 8,
+                    }}
+                  />
+                  <Text>Alan Soares de Oliveira</Text>
+                </TouchableOpacity>
+              </View>
+            </ContainerFriends>
           </SectionFriends>
         </ScrollView>
       </Container>

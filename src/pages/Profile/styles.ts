@@ -147,12 +147,6 @@ export const SectionFriends = styled.View`
   margin-top: 15px;
 `;
 
-export const ContainerFriends = styled.View`
-  border-width: 0.5px;
-  border-color: blue;
-  margin-bottom: 5px;
-`;
-
 export const ContainerTitleFindFriends = styled.View`
   border-width: 0.5px;
   border-color: green;
@@ -174,4 +168,15 @@ export const CountFriend = styled.Text`
 export const TextFindFriends = styled.Text`
   font-size: 16px;
   color: #1877f2;
+`;
+
+export const ContainerFriends = styled.View`
+  flex: 1;
+  flex-direction: row;
+  border-width: 0.5px;
+  border-color: blue;
+  margin-bottom: 5px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 `;
