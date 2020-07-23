@@ -147,6 +147,7 @@ export const SectionFriends = styled.View`
   flex: 1;
 
   margin-top: 15px;
+  /* margin-bottom: 5px; */
 `;
 
 export const ContainerTitleFindFriends = styled.View`
@@ -201,7 +202,7 @@ export const ImageFriend = styled.Image.attrs({
 export const NameFriendText = styled.Text`
   /* font-weight: bold; */
   margin-top: 10px;
-
+  margin-left: 5px;
   font-size: 15px;
   color: #000;
 `;
@@ -215,7 +216,7 @@ export const SeeAllFriendsButton = styled(RectButton)`
   flex-direction: row;
   background: #d4d8e8;
   /* background: #ccc; */
-  margin-top: 16px;
+  margin-top: 25px;
   margin-bottom: 18px;
 `;
 
