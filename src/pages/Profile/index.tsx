@@ -37,6 +37,11 @@ import {
   TitleFriends,
   CountFriend,
   TextFindFriends,
+  ImageFriendView,
+  ImageFriend,
+  NameFriendText,
+  SeeAllFriendsButton,
+  SeeAllFriendsText,
 } from './styles';
 
 import alan from '../../assets/alan.jpg';
@@ -136,122 +141,35 @@ const Profile: React.FC = () => {
               </TitleFriendsView>
               <TextFindFriends>Find Friends</TextFindFriends>
             </ContainerTitleFindFriends>
-            {/* <ContainerFriends>
-              <View
-                style={{
-                  flexDirection: 'row',
-                  width: '32%',
-                  height: win.width / 3,
-                  alignItems: 'center',
-                  flexWrap: 'wrap',
-                }}>
-                <Image
-                  source={alan}
-                  resizeMode="cover"
-                  style={{
-                    width: '100%',
-                    height: win.width / 3.6,
-                    borderRadius: 8,
-                  }}
-                />
-                <Text>Alan Soares</Text>
-              </View>
-              <View
-                style={{
-                  flexDirection: 'row',
-                  width: '32%',
-                  height: win.width / 3,
-                  alignItems: 'center',
-                  flexWrap: 'wrap',
-                }}>
-                <Image
-                  source={alan}
-                  resizeMode="cover"
-                  style={{
-                    width: '100%',
-                    height: win.width / 3.6,
-                    borderRadius: 8,
-                  }}
-                />
-                <Text>Alan Soares de Oliveira</Text>
-              </View>
-              <View
-                style={{
-                  flexDirection: 'row',
-                  width: '32%',
-                  height: win.width / 3,
-                  alignItems: 'center',
-                  flexWrap: 'wrap',
-                }}>
-                <Image
-                  source={sunrafa}
-                  resizeMode="cover"
-                  style={{
-                    width: '100%',
-                    height: win.width / 3.6,
-                    borderRadius: 8,
-                  }}
-                />
-                <Text>Alan Soares</Text>
-              </View>
-              <View
-                style={{
-                  flexDirection: 'row',
-                  width: '32%',
-                  height: win.width / 3,
-                  alignItems: 'center',
-                  flexWrap: 'wrap',
-                }}>
-                <Image
-                  source={alan}
-                  resizeMode="cover"
-                  style={{
-                    width: '100%',
-                    height: win.width / 3.6,
-                    borderRadius: 8,
-                  }}
-                />
-                <Text>Alan Soares</Text>
-              </View>
-              <View
-                style={{
-                  flexDirection: 'row',
-                  width: '32%',
-                  height: win.width / 3,
-                  alignItems: 'center',
-                  flexWrap: 'wrap',
-                }}>
-                <Image
-                  source={alan}
-                  resizeMode="cover"
-                  style={{
-                    width: '100%',
-                    height: win.width / 3.6,
-                    borderRadius: 8,
-                  }}
-                />
-                <Text>Alan Soares</Text>
-              </View>
-              <View
-                style={{
-                  flexDirection: 'row',
-                  width: '32%',
-                  height: win.width / 3,
-                  alignItems: 'center',
-                  flexWrap: 'wrap',
-                }}>
-                <Image
-                  source={alan}
-                  resizeMode="cover"
-                  style={{
-                    width: '100%',
-                    height: win.width / 3.6,
-                    borderRadius: 8,
-                  }}
-                />
-                <Text>Alan Soares</Text>
-              </View>
-            </ContainerFriends> */}
+            <ContainerFriends>
+              <ImageFriendView>
+                <ImageFriend source={alan} />
+                <NameFriendText>Alan Soares</NameFriendText>
+              </ImageFriendView>
+              <ImageFriendView>
+                <ImageFriend source={alan} />
+                <NameFriendText>Alan Soares</NameFriendText>
+              </ImageFriendView>
+              <ImageFriendView>
+                <ImageFriend source={alan} />
+                <NameFriendText>Alan Soares</NameFriendText>
+              </ImageFriendView>
+              <ImageFriendView>
+                <ImageFriend source={alan} />
+                <NameFriendText>Alan Soares</NameFriendText>
+              </ImageFriendView>
+              <ImageFriendView>
+                <ImageFriend source={alan} />
+                <NameFriendText>Alan Soares</NameFriendText>
+              </ImageFriendView>
+              <ImageFriendView>
+                <ImageFriend source={alan} />
+                <NameFriendText>Alan Soares</NameFriendText>
+              </ImageFriendView>
+            </ContainerFriends>
+            <SeeAllFriendsButton>
+              <SeeAllFriendsText>See All Friends</SeeAllFriendsText>
+            </SeeAllFriendsButton>
           </SectionFriends>
         </ScrollView>
       </Container>

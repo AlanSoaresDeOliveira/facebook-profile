@@ -1,6 +1,9 @@
 import styled from 'styled-components/native';
+import {Dimensions} from 'react-native';
 import IconEntypo from 'react-native-vector-icons/Entypo';
 import {RectButton} from 'react-native-gesture-handler';
+
+const winDimension = Dimensions.get('window');
 
 export const Container = styled.View`
   flex: 1;
@@ -147,7 +150,7 @@ export const SectionFriends = styled.View`
 `;
 
 export const ContainerTitleFindFriends = styled.View`
-  margin-bottom: 17 px;
+  margin-bottom: 17px;
   flex-direction: row;
   justify-content: space-between;
 `;
@@ -175,4 +178,47 @@ export const ContainerFriends = styled.View`
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+`;
+
+export const ImageFriendView = styled.View`
+  flex-direction: row;
+  width: 32%;
+  height: ${winDimension.width / 3}px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 8px;
+  margin-bottom: 8px;
+`;
+
+export const ImageFriend = styled.Image.attrs({
+  resizeMode: 'cover',
+})`
+  width: 100%;
+  height: ${winDimension.width / 3.6}px;
+  border-radius: 8px;
+`;
+
+export const NameFriendText = styled.Text`
+  /* font-weight: bold; */
+  margin-top: 10px;
+
+  font-size: 15px;
+  color: #000;
+`;
+
+export const SeeAllFriendsButton = styled(RectButton)`
+  width: 100%;
+  height: 37px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  flex-direction: row;
+  background: #d4d8e8;
+  /* background: #ccc; */
+  margin-top: 16px;
+  margin-bottom: 18px;
+`;
+
+export const SeeAllFriendsText = styled.Text`
+  font-size: 15px;
 `;
