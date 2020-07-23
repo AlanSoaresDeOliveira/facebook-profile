@@ -150,6 +150,7 @@ export const SectionFriends = styled.View`
 export const ContainerFriends = styled.View`
   border-width: 0.5px;
   border-color: blue;
+  padding: 50px 0 50px 0;
   margin-bottom: 5px;
 `;
 
