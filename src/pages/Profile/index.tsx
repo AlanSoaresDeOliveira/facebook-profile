@@ -46,8 +46,13 @@ import {
 
 import alan from '../../assets/alan.jpg';
 import cover from '../../assets/cover.jpg';
-import sunrafa from '../../assets/sunrafa.jpg';
-import flavia from '../../assets/flavia.jpg';
+
+import angela from '../../assets/angela.jpg';
+import jeff from '../../assets/jeff.jpg';
+import obama from '../../assets/obama.jpg';
+import stevejobs from '../../assets/stevejobs.jpg';
+import timcook from '../../assets/timcook.jpg';
+import mark from '../../assets/mark.jpg';
 
 const Profile: React.FC = () => {
   return (
@@ -143,28 +148,28 @@ const Profile: React.FC = () => {
             </ContainerTitleFindFriends>
             <ContainerFriends>
               <ImageFriendView>
-                <ImageFriend source={alan} />
-                <NameFriendText>Alan Soares</NameFriendText>
+                <ImageFriend source={angela} />
+                <NameFriendText>Angela Merkel</NameFriendText>
               </ImageFriendView>
               <ImageFriendView>
-                <ImageFriend source={alan} />
-                <NameFriendText>Alan Soares</NameFriendText>
+                <ImageFriend source={jeff} />
+                <NameFriendText>Jeff</NameFriendText>
               </ImageFriendView>
               <ImageFriendView>
-                <ImageFriend source={alan} />
-                <NameFriendText>Alan Soares</NameFriendText>
+                <ImageFriend source={timcook} />
+                <NameFriendText>Tim Cook</NameFriendText>
               </ImageFriendView>
               <ImageFriendView>
-                <ImageFriend source={alan} />
-                <NameFriendText>Alan Soares</NameFriendText>
+                <ImageFriend source={obama} />
+                <NameFriendText>Barack Obama</NameFriendText>
               </ImageFriendView>
               <ImageFriendView>
-                <ImageFriend source={alan} />
-                <NameFriendText>Alan Soares</NameFriendText>
+                <ImageFriend source={stevejobs} />
+                <NameFriendText>Steves Jobs</NameFriendText>
               </ImageFriendView>
               <ImageFriendView>
-                <ImageFriend source={alan} />
-                <NameFriendText>Alan Soares</NameFriendText>
+                <ImageFriend source={mark} />
+                <NameFriendText>Mark Zuckerberg</NameFriendText>
               </ImageFriendView>
             </ContainerFriends>
             <SeeAllFriendsButton>
