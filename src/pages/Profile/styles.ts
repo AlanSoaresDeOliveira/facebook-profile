@@ -95,7 +95,7 @@ export const TextButtonAddStory = styled.Text`
 `;
 
 export const ProfileSettingButton = styled(RectButton)`
-  width: 15%;
+  width: 50px;
   height: 36px;
   background: #d4d8e8;
   align-items: center;
@@ -142,15 +142,12 @@ export const TextButtonEditDetails = styled.Text`
 
 export const SectionFriends = styled.View`
   flex: 1;
-  border-width: 0.5px;
-  border-color: red;
+
   margin-top: 15px;
 `;
 
 export const ContainerTitleFindFriends = styled.View`
-  border-width: 0.5px;
-  border-color: green;
-  margin-bottom: 5px;
+  margin-bottom: 17 px;
   flex-direction: row;
   justify-content: space-between;
 `;
@@ -158,24 +155,23 @@ export const ContainerTitleFindFriends = styled.View`
 export const TitleFriendsView = styled.View``;
 
 export const TitleFriends = styled.Text`
-  font-size: 18px;
+  font-size: 21px;
   font-weight: bold;
 `;
 
 export const CountFriend = styled.Text`
+  font-size: 17px;
   color: gray;
 `;
 export const TextFindFriends = styled.Text`
-  font-size: 16px;
+  font-size: 17px;
   color: #1877f2;
 `;
 
 export const ContainerFriends = styled.View`
   flex: 1;
   flex-direction: row;
-  border-width: 0.5px;
-  border-color: blue;
-  margin-bottom: 5px;
+  /* margin-bottom: 5px; */
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;

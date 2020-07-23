@@ -41,6 +41,8 @@ import {
 
 import alan from '../../assets/alan.jpg';
 import cover from '../../assets/cover.jpg';
+import sunrafa from '../../assets/sunrafa.jpg';
+import flavia from '../../assets/flavia.jpg';
 
 const Profile: React.FC = () => {
   return (
@@ -134,72 +136,122 @@ const Profile: React.FC = () => {
               </TitleFriendsView>
               <TextFindFriends>Find Friends</TextFindFriends>
             </ContainerTitleFindFriends>
-            <ContainerFriends>
+            {/* <ContainerFriends>
               <View
                 style={{
-                  width: win.width / 4,
-                  height: win.height / 5,
+                  flexDirection: 'row',
+                  width: '32%',
+                  height: win.width / 3,
                   alignItems: 'center',
                   flexWrap: 'wrap',
-                  borderWidth: 0.5,
                 }}>
-                <TouchableOpacity>
-                  <Image
-                    source={alan}
-                    style={{
-                      flex: 1,
-                      width: win.width / 4,
-                      height: win.height / 4,
-                      borderRadius: 8,
-                    }}
-                  />
-                  <Text>Alan Soares de Oliveira</Text>
-                </TouchableOpacity>
-              </View>
-
-              <View
-                style={{
-                  width: win.width / 4,
-                  height: win.height / 5,
-                  alignItems: 'center',
-                  flexWrap: 'wrap',
-                  borderWidth: 0.5,
-                }}>
-                <TouchableOpacity>
-                  <Image
-                    source={alan}
-                    style={{
-                      flex: 1,
-                      width: win.width / 4,
-                      height: win.height / 4,
-                      borderRadius: 8,
-                    }}
-                  />
-                  <Text>Alan Soares de Oliveira</Text>
-                </TouchableOpacity>
+                <Image
+                  source={alan}
+                  resizeMode="cover"
+                  style={{
+                    width: '100%',
+                    height: win.width / 3.6,
+                    borderRadius: 8,
+                  }}
+                />
+                <Text>Alan Soares</Text>
               </View>
               <View
                 style={{
-                  width: win.width / 4,
-                  height: win.height / 5,
+                  flexDirection: 'row',
+                  width: '32%',
+                  height: win.width / 3,
                   alignItems: 'center',
                   flexWrap: 'wrap',
-                  borderWidth: 0.5,
                 }}>
-                <TouchableOpacity>
-                  <Image
-                    source={alan}
-                    style={{
-                      flex: 1,
-                      width: win.width / 4,
-                      height: win.height / 4,
-                      borderRadius: 8,
-                    }}
-                  />
-                  <Text>Alan Soares de Oliveira</Text>
-                </TouchableOpacity>
+                <Image
+                  source={alan}
+                  resizeMode="cover"
+                  style={{
+                    width: '100%',
+                    height: win.width / 3.6,
+                    borderRadius: 8,
+                  }}
+                />
+                <Text>Alan Soares de Oliveira</Text>
               </View>
-            </ContainerFriends>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  width: '32%',
+                  height: win.width / 3,
+                  alignItems: 'center',
+                  flexWrap: 'wrap',
+                }}>
+                <Image
+                  source={sunrafa}
+                  resizeMode="cover"
+                  style={{
+                    width: '100%',
+                    height: win.width / 3.6,
+                    borderRadius: 8,
+                  }}
+                />
+                <Text>Alan Soares</Text>
+              </View>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  width: '32%',
+                  height: win.width / 3,
+                  alignItems: 'center',
+                  flexWrap: 'wrap',
+                }}>
+                <Image
+                  source={alan}
+                  resizeMode="cover"
+                  style={{
+                    width: '100%',
+                    height: win.width / 3.6,
+                    borderRadius: 8,
+                  }}
+                />
+                <Text>Alan Soares</Text>
+              </View>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  width: '32%',
+                  height: win.width / 3,
+                  alignItems: 'center',
+                  flexWrap: 'wrap',
+                }}>
+                <Image
+                  source={alan}
+                  resizeMode="cover"
+                  style={{
+                    width: '100%',
+                    height: win.width / 3.6,
+                    borderRadius: 8,
+                  }}
+                />
+                <Text>Alan Soares</Text>
+              </View>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  width: '32%',
+                  height: win.width / 3,
+                  alignItems: 'center',
+                  flexWrap: 'wrap',
+                }}>
+                <Image
+                  source={alan}
+                  resizeMode="cover"
+                  style={{
+                    width: '100%',
+                    height: win.width / 3.6,
+                    borderRadius: 8,
+                  }}
+                />
+                <Text>Alan Soares</Text>
+              </View>
+            </ContainerFriends> */}
           </SectionFriends>
         </ScrollView>
       </Container>
