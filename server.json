@@ -2,7 +2,33 @@
   "friends": [
     {
       "id": 1,
-      "name": "Angela Merkel"
+      "name": "Angela Merkel",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Angela_Merkel_2019_%28cropped%29.jpg/800px-Angela_Merkel_2019_%28cropped%29.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Jeff Bezos",
+      "image": "https://www.biography.com/.image/t_share/MTY2NzA3ODE3OTgwMzcyMjYw/jeff-bezos-andrew-harrer_bloomberg-via-getty-images.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Barack Obama",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/8/8d/President_Barack_Obama.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Steve Jobs",
+      "image": "https://www.gowork.com.br/blog/wp-content/uploads/2017/10/jobs1-1024x576-1024x576.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Tim Cook",
+      "image": "https://pbs.twimg.com/profile_images/1194113737092935681/63O1znGw_400x400.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Mark Zuckerberg",
+      "image": "https://static.poder360.com.br/2018/01/Mark-Zuckerberg-868x644.png"
     }
   ]
 }

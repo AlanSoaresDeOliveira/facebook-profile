@@ -40,43 +40,18 @@ import {
 import alan from '../../assets/alan.jpg';
 import cover from '../../assets/cover.jpg';
 
-import angela from '../../assets/angela.jpg';
-import jeff from '../../assets/jeff.jpg';
-import obama from '../../assets/obama.jpg';
-import stevejobs from '../../assets/stevejobs.jpg';
-import timcook from '../../assets/timcook.jpg';
-import mark from '../../assets/mark.jpg';
-
-const friendsArray = [
-  {
-    id: 1,
-    image: angela,
-    name: 'Angela Merkerl',
-  },
-  {
-    id: 2,
-    image: jeff,
-    name: 'Jeff',
-  },
-  {
-    id: 3,
-    image: obama,
-    name: 'Obama',
-  },
-];
-
 const Profile: React.FC = () => {
-  // const [friends, setFriends] = useState([]);
+  const [friends, setFriends] = useState([]);
 
-  // useEffect(() => {
-  //   async function loadFriends() {
-  //     const response = await api.get('friends');
-  //     setFriends(response);
-  //     console.log(response.data);
-  //   }
+  useEffect(() => {
+    async function loadFriends() {
+      const response = await api.get('friends');
+      setFriends(response.data);
+      console.log(response.data);
+    }
 
-  //   loadFriends();
-  // }, []);
+    loadFriends();
+  }, []);
   return (
     <>
       <Header />
@@ -169,9 +144,9 @@ const Profile: React.FC = () => {
               <TextFindFriends>Find Friends</TextFindFriends>
             </ContainerTitleFindFriends>
             <ContainerFriends>
-              {friendsArray.map((friend) => (
+              {friends.map((friend) => (
                 <ImageFriendView key={String(friend.id)}>
-                  <ImageFriend source={friend.image} />
+                  <ImageFriend source={{uri: friend.image}} />
                   <NameFriendText>{friend.name}</NameFriendText>
                 </ImageFriendView>
               ))}
@@ -180,44 +155,6 @@ const Profile: React.FC = () => {
               <SeeAllFriendsText>See All Friends</SeeAllFriendsText>
             </SeeAllFriendsButton>
           </SectionFriends>
-          {/* <SectionFriends>
-            <ContainerTitleFindFriends>
-              <TitleFriendsView>
-                <TitleFriends>Friends</TitleFriends>
-                <CountFriend>1,045 friends</CountFriend>
-              </TitleFriendsView>
-              <TextFindFriends>Find Friends</TextFindFriends>
-            </ContainerTitleFindFriends>
-            <ContainerFriends>
-              <ImageFriendView>
-                <ImageFriend source={angela} />
-                <NameFriendText>Angela Merkel</NameFriendText>
-              </ImageFriendView>
-              <ImageFriendView>
-                <ImageFriend source={jeff} />
-                <NameFriendText>Jeff</NameFriendText>
-              </ImageFriendView>
-              <ImageFriendView>
-                <ImageFriend source={timcook} />
-                <NameFriendText>Tim Cook</NameFriendText>
-              </ImageFriendView>
-              <ImageFriendView>
-                <ImageFriend source={obama} />
-                <NameFriendText>Barack Obama</NameFriendText>
-              </ImageFriendView>
-              <ImageFriendView>
-                <ImageFriend source={stevejobs} />
-                <NameFriendText>Steves Jobs</NameFriendText>
-              </ImageFriendView>
-              <ImageFriendView>
-                <ImageFriend source={mark} />
-                <NameFriendText>Mark Zuckerberg</NameFriendText>
-              </ImageFriendView>
-            </ContainerFriends>
-            <SeeAllFriendsButton>
-              <SeeAllFriendsText>See All Friends</SeeAllFriendsText>
-            </SeeAllFriendsButton>
-          </SectionFriends> */}
         </ScrollView>
       </Container>
     </>
