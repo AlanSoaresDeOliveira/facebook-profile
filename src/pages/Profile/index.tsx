@@ -40,8 +40,14 @@ import {
 import alan from '../../assets/alan.jpg';
 import cover from '../../assets/cover.jpg';
 
+interface Friends {
+  id: number;
+  name: string;
+  image: string;
+}
+
 const Profile: React.FC = () => {
-  const [friends, setFriends] = useState([]);
+  const [friends, setFriends] = useState<Friends[]>([]);
 
   useEffect(() => {
     async function loadFriends() {
