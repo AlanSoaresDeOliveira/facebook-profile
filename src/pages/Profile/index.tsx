@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {ScrollView, Text} from 'react-native';
 import Header from '../../components/Header';
 
@@ -47,7 +47,36 @@ import stevejobs from '../../assets/stevejobs.jpg';
 import timcook from '../../assets/timcook.jpg';
 import mark from '../../assets/mark.jpg';
 
+const friendsArray = [
+  {
+    id: 1,
+    image: angela,
+    name: 'Angela Merkerl',
+  },
+  {
+    id: 2,
+    image: jeff,
+    name: 'Jeff',
+  },
+  {
+    id: 3,
+    image: obama,
+    name: 'Obama',
+  },
+];
+
 const Profile: React.FC = () => {
+  // const [friends, setFriends] = useState([]);
+
+  // useEffect(() => {
+  //   async function loadFriends() {
+  //     const response = await api.get('friends');
+  //     setFriends(response);
+  //     console.log(response.data);
+  //   }
+
+  //   loadFriends();
+  // }, []);
   return (
     <>
       <Header />
@@ -140,6 +169,26 @@ const Profile: React.FC = () => {
               <TextFindFriends>Find Friends</TextFindFriends>
             </ContainerTitleFindFriends>
             <ContainerFriends>
+              {friendsArray.map((friend) => (
+                <ImageFriendView key={String(friend.id)}>
+                  <ImageFriend source={friend.image} />
+                  <NameFriendText>{friend.name}</NameFriendText>
+                </ImageFriendView>
+              ))}
+            </ContainerFriends>
+            <SeeAllFriendsButton>
+              <SeeAllFriendsText>See All Friends</SeeAllFriendsText>
+            </SeeAllFriendsButton>
+          </SectionFriends>
+          {/* <SectionFriends>
+            <ContainerTitleFindFriends>
+              <TitleFriendsView>
+                <TitleFriends>Friends</TitleFriends>
+                <CountFriend>1,045 friends</CountFriend>
+              </TitleFriendsView>
+              <TextFindFriends>Find Friends</TextFindFriends>
+            </ContainerTitleFindFriends>
+            <ContainerFriends>
               <ImageFriendView>
                 <ImageFriend source={angela} />
                 <NameFriendText>Angela Merkel</NameFriendText>
@@ -168,7 +217,7 @@ const Profile: React.FC = () => {
             <SeeAllFriendsButton>
               <SeeAllFriendsText>See All Friends</SeeAllFriendsText>
             </SeeAllFriendsButton>
-          </SectionFriends>
+          </SectionFriends> */}
         </ScrollView>
       </Container>
     </>
