@@ -1,6 +1,9 @@
 import styled from 'styled-components/native';
+import {Dimensions} from 'react-native';
 import IconEntypo from 'react-native-vector-icons/Entypo';
 import {RectButton} from 'react-native-gesture-handler';
+
+const winDimension = Dimensions.get('window');
 
 export const Container = styled.View`
   flex: 1;
@@ -95,7 +98,7 @@ export const TextButtonAddStory = styled.Text`
 `;
 
 export const ProfileSettingButton = styled(RectButton)`
-  width: 15%;
+  width: 50px;
   height: 36px;
   background: #d4d8e8;
   align-items: center;
@@ -142,22 +145,11 @@ export const TextButtonEditDetails = styled.Text`
 
 export const SectionFriends = styled.View`
   flex: 1;
-  border-width: 0.5px;
-  border-color: red;
-  margin-top: 15px;
-`;
-
-export const ContainerFriends = styled.View`
-  border-width: 0.5px;
-  border-color: blue;
-  padding: 50px 0 50px 0;
-  margin-bottom: 5px;
+  margin-top: 10px;
 `;
 
 export const ContainerTitleFindFriends = styled.View`
-  border-width: 0.5px;
-  border-color: green;
-  margin-bottom: 5px;
+  margin-bottom: 17px;
   flex-direction: row;
   justify-content: space-between;
 `;
@@ -165,14 +157,68 @@ export const ContainerTitleFindFriends = styled.View`
 export const TitleFriendsView = styled.View``;
 
 export const TitleFriends = styled.Text`
-  font-size: 18px;
+  font-size: 21px;
   font-weight: bold;
 `;
 
 export const CountFriend = styled.Text`
+  font-size: 17px;
   color: gray;
 `;
 export const TextFindFriends = styled.Text`
-  font-size: 16px;
+  font-size: 17px;
   color: #1877f2;
+`;
+
+export const ContainerFriends = styled.View`
+  flex: 1;
+  flex-direction: row;
+  /* margin-bottom: 5px; */
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+`;
+
+export const ImageFriendView = styled.View`
+  flex-direction: row;
+  width: 32%;
+  height: ${winDimension.width / 3}px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 8px;
+  margin-bottom: 8px;
+`;
+
+export const ImageFriend = styled.Image.attrs({
+  resizeMode: 'cover',
+})`
+  width: 100%;
+  height: ${winDimension.width / 3.6}px;
+  border-radius: 8px;
+`;
+
+export const NameFriendText = styled.Text`
+  /* font-weight: bold; */
+  margin-top: 10px;
+  margin-left: 5px;
+  font-size: 15px;
+  color: #000;
+`;
+
+export const SeeAllFriendsButton = styled(RectButton)`
+  width: 100%;
+  height: 37px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  flex-direction: row;
+  background: #d4d8e8;
+  /* background: #ccc; */
+  margin-top: 25px;
+  margin-bottom: 18px;
+`;
+
+export const SeeAllFriendsText = styled.Text`
+  font-size: 15px;
+  font-weight: bold;
 `;

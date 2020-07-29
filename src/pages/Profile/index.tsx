@@ -2,6 +2,8 @@ import React from 'react';
 import {ScrollView, Text} from 'react-native';
 import Header from '../../components/Header';
 
+import api from '../../services/api';
+
 import {
   Container,
   ContainerImage,
@@ -28,10 +30,22 @@ import {
   TitleFriends,
   CountFriend,
   TextFindFriends,
+  ImageFriendView,
+  ImageFriend,
+  NameFriendText,
+  SeeAllFriendsButton,
+  SeeAllFriendsText,
 } from './styles';
 
 import alan from '../../assets/alan.jpg';
 import cover from '../../assets/cover.jpg';
+
+import angela from '../../assets/angela.jpg';
+import jeff from '../../assets/jeff.jpg';
+import obama from '../../assets/obama.jpg';
+import stevejobs from '../../assets/stevejobs.jpg';
+import timcook from '../../assets/timcook.jpg';
+import mark from '../../assets/mark.jpg';
 
 const Profile: React.FC = () => {
   return (
@@ -125,7 +139,35 @@ const Profile: React.FC = () => {
               </TitleFriendsView>
               <TextFindFriends>Find Friends</TextFindFriends>
             </ContainerTitleFindFriends>
-            <ContainerFriends />
+            <ContainerFriends>
+              <ImageFriendView>
+                <ImageFriend source={angela} />
+                <NameFriendText>Angela Merkel</NameFriendText>
+              </ImageFriendView>
+              <ImageFriendView>
+                <ImageFriend source={jeff} />
+                <NameFriendText>Jeff</NameFriendText>
+              </ImageFriendView>
+              <ImageFriendView>
+                <ImageFriend source={timcook} />
+                <NameFriendText>Tim Cook</NameFriendText>
+              </ImageFriendView>
+              <ImageFriendView>
+                <ImageFriend source={obama} />
+                <NameFriendText>Barack Obama</NameFriendText>
+              </ImageFriendView>
+              <ImageFriendView>
+                <ImageFriend source={stevejobs} />
+                <NameFriendText>Steves Jobs</NameFriendText>
+              </ImageFriendView>
+              <ImageFriendView>
+                <ImageFriend source={mark} />
+                <NameFriendText>Mark Zuckerberg</NameFriendText>
+              </ImageFriendView>
+            </ContainerFriends>
+            <SeeAllFriendsButton>
+              <SeeAllFriendsText>See All Friends</SeeAllFriendsText>
+            </SeeAllFriendsButton>
           </SectionFriends>
         </ScrollView>
       </Container>
